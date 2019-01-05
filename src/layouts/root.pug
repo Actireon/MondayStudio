@@ -1,0 +1,19 @@
+include  ../../node_modules/bemto.pug/bemto
+include  ../block/index
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=yes")
+		title MondayStudio
+	body
+		block main
+
+		link(rel="stylesheet" href="css/monStudio.css")
+		link(rel="stylesheet" href="modules/sprite/sprite.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js")
+		script(src="js/monStudio.js")
+			

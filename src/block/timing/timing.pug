@@ -1,0 +1,10 @@
+mixin b-timing()
+	+b.timing#timing
+		.container
+			+e.left
+				+b-title-page(timing.title, 'timing')
+				+b-stack-word(timing.note, 'note')
+				+b-button(timing.btn_detailed, 'detailed')
+
+			+e.right
+				+b-table-timing(timing.table_timing, 'timing')

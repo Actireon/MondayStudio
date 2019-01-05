@@ -1,0 +1,54 @@
+.header
+	.nav
+		&_header
+			display inline-block
+			position fixed
+			z-index 10
+		.nav-toggler
+			width 17px
+			display inline-block
+			cursor pointer
+			background rgba(0, 0, 0, .1)
+			padding 5px 5px 0
+			&__row
+				border-top 2px solid #fff
+				padding-bottom 5px
+				width 100%
+		.nav-list
+			width 700px
+			display flex
+			flex-wrap wrap
+			flex-direction row
+			justify-content space-between
+			align-items center
+			background rgba(0, 0, 0, .5)
+			position absolute
+			z-index 10
+			right 0
+			top 30px
+			display none
+			&__item
+				padding 10px
+				text-transform uppercase
+			&__link.active
+				text-decoration underline
+		&_header.active
+			.nav-list
+				display flex
+			.nav-toggler
+				&__row_1
+				&__row_3
+					margin 0 auto
+					width 80%
+					
+@media phone
+	.header
+		.nav_header
+			top 40px
+		.nav_header.active
+			display block
+			.nav-list
+				display block
+				&__item
+					width 100%
+					text-align center

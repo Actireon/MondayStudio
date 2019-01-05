@@ -1,0 +1,9 @@
+mixin b-advantages()
+	+b.advantages#advantages
+		.container
+			+e.left
+				+b-title-page(advantages.title, 'advantages')
+				+b-stack-word(advantages.note, 'note')
+
+			+e.right
+				+b-list-options-icon-out(advantages.list_advantages, 'advantages')
